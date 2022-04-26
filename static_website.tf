@@ -1,6 +1,6 @@
 resource "aws_s3_bucket" "frontend" {
-  bucket =  var.bucket_name
-  acl = "public-read"
+  bucket = var.bucket_name
+  acl    = "public-read"
   policy = <<EOF
 {
   "Id": "bucket_policy_site",
